@@ -107,7 +107,7 @@ if (CLIENT) then
 				callback(metadata)
 				panel:Remove()
 			end
-
+			print(msg)
 			if msg:StartWith("ERROR:") then
 				local code = tonumber(string.sub(msg, 7))
 
